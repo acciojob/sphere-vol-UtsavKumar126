@@ -13,7 +13,7 @@ function volume_sphere() {
             if (!isNaN(radius) && radius >= 0) {
                 // Calculate the volume of the sphere
                 const volume = (4/3) * Math.PI * Math.pow(radius, 3);
-                resultElement.value = `${volume.toFixed(2)}`;
+                resultElement.value = `${volume.toFixed(4)}`;
             } else {
                 resultElement.textContent = "Invalid input. Please enter a valid non-negative number.";
             }
